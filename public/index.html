@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Svelte app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link rel="icon" type="image/png" href="todo.png" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="bundle.css" />
+    <meta content="#fec608" name="theme-color" />
+    <meta content="yes" name="mobile-web-app-capable" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="pranta" name="application-name" />
+    <meta content="pranta" name="apple-mobile-web-app-title" />
+    <meta content="#fec608" name="msapplication-navbutton-color" />
+    <meta
+      content="black-translucent"
+      name="apple-mobile-web-app-status-bar-style"
+    />
+    <meta content="/" name="msapplication-starturl" />
+  </head>
+
+  <body>
+    <script src="bundle.js"></script>
+    <script>
+      window.addEventListener("load", function() {
+        "serviceWorker" in navigator &&
+          navigator.serviceWorker.register("sw.js", { scope: "." });
+      });
+    </script>
+  </body>
+</html>
