@@ -9,7 +9,7 @@
       <img src="todo.png" alt="todo" /> &nbsp;<b>TODO APP</b>
     </a>
 
-    <a href="#"
+    <a
       role="button"
       class="navbar-burger burger"
       aria-label="menu"
